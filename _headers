@@ -2,5 +2,5 @@
 /.well-known/apple-app-site-association
 	Content-Type: application/json
 
-/status.json
+/status
 	Content-Type: application/json
