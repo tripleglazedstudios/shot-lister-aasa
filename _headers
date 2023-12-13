@@ -1,3 +1,6 @@
 # a path:
 /.well-known/apple-app-site-association
 	Content-Type: application/json
+
+/status.json
+	Content-Type: application/json
