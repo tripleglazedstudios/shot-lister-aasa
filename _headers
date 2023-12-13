@@ -2,5 +2,5 @@
 /.well-known/apple-app-site-association
 	Content-Type: application/json
 
-/status
+/status/migration
 	Content-Type: application/json
