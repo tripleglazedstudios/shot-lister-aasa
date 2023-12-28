@@ -1,4 +1,4 @@
 {
   "shouldMigrateToSL5": true,
-  "legacySunsetDate": "2023-12-27T00:00:00Z"
+  "legacySunsetDate": null
 }
