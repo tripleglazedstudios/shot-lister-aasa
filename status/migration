@@ -1,4 +1,3 @@
 {
-  "shouldMigrateToSL5": true,
-  "legacySunsetDate": null
+  "shouldMigrateToSL5": true
 }
