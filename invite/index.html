@@ -10,14 +10,30 @@
       text-align: center;
       padding: 40px;
     }
+    
     h1 {
       font-size: 24px;
       margin-bottom: 20px;
     }
+    
     p {
       font-size: 16px;
     }
+
     a {
+      color: #007AFF;
+      text-decoration: none;
+      font-weight: 500; /* Makes text slightly bolder */
+    }
+    a:hover {
+      text-decoration: underline; /* Adds an underline on hover */
+      text-decoration-color: #007AFF; /* Ensures underline color matches link color */
+    }
+    a:active {
+      color: #0056b3; /* Darkens the link color when clicked */
+    }
+
+    .cta-button {
       display: inline-block;
       background-color: #007AFF;
       color: #fff;
@@ -27,13 +43,35 @@
       font-size: 16px;
       margin-top: 20px;
     }
+    
+    .divider {
+      margin-top: 30px;
+      border-bottom: 1px solid #ccc;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 </head>
 <body>
   <h1>Project Invite</h1>
+  <a href="#" class="cta-button" onclick="openInvite()">Open Invite</a>
+  
+  <div class="divider"></div>
+  
   <div id="message">
-    <p>Loading...</p>
+    <p>Don't have Shot Lister 5 installed? <a href="https://apps.apple.com/app/id529436218">Install Shot Lister</a></p>
   </div>
-  <a id="cta-button" href="https://apps.apple.com/app/id529436218">Install Shot Lister</a>
+  
+  <script>
+    function openInvite() {
+      const pathName = window.location.pathname;
+      const pathComponents = pathName.split('/');
+      const lastPathComponent = pathComponents.filter(component => component !== "").pop();
+
+      // Open the Shot Lister app with the invite URL (custom URL scheme is `shotlister-5://`)
+      window.location.href = `shotlister-5:///invite/${lastPathComponent}`;
+    }
+  </script>
 </body>
 </html>
