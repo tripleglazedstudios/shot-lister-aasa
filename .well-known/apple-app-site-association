@@ -7,7 +7,7 @@
     "details": [
       {
         "appID": "JU6E3HS33L.com.reelapps.RAShotLister",
-        "paths": ["/invite/*", "/event/*"]
+        "paths": ["/invite/*", "/events/*"]
       }
     ]
   }
